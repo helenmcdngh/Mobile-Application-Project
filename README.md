@@ -1,4 +1,4 @@
-##Mobile Applications Development Project 2017
+Mobile Applications Development Project 2017
 -----------------------------------------------------------------------------------------------------------------------------------------
 ### Requirements
 Create a Universal Windows Project (UWP) that will each demonstrate the use of Isolated Storage
@@ -10,6 +10,14 @@ and at least one other sensor or service available on the devices. These include
 - Camera
 - Multi Touch Gesture Management
 
-##Outline
+Project Ideas
 -----------------------------------------------------------------------------------------------------------------------------------------
+1.Weather Application that gets the weather forcast in your current location. 
 
+2.Teaching children from the ages One to Three vocabulary in categories:
+- Shapes
+- Family members
+- Colours
+- Foods
+- Household objects
+- Animals and their sounds
