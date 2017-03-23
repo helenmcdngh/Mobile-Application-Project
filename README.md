@@ -15,9 +15,9 @@ Project Ideas
 1. Weather Application that gets the weather forcast in your current location. 
 
 2. Teaching children from the ages One to Three vocabulary in categories:
-- Shapes
-- Family members
-- Colours
-- Foods
-- Objects
-- Animals
+    - Shapes
+    - Family members
+    - Colours
+    - Foods
+    - Objects
+    - Animals
