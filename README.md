@@ -12,12 +12,12 @@ and at least one other sensor or service available on the devices. These include
 
 Project Ideas
 -----------------------------------------------------------------------------------------------------------------------------------------
-1.Weather Application that gets the weather forcast in your current location. 
+1. Weather Application that gets the weather forcast in your current location. 
 
-2.Teaching children from the ages One to Three vocabulary in categories:
+2. Teaching children from the ages One to Three vocabulary in categories:
 - Shapes
 - Family members
 - Colours
 - Foods
-- Household objects
-- Animals and their sounds
+- Objects
+- Animals
