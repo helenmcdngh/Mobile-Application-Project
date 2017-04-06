@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="Project.ShapePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="250*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="250*"/>
+        </Grid.ColumnDefinitions>
+
+        <GridView Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center">
+            <Image Source="/Images/shapes/circle.png" Stretch="Uniform"  Tapped="Circle_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="200" Width="200" />
+            <MediaElement x:Name="Circle" AutoPlay="False" Source="/Sound/shapes/Circle.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center">
+            <Image Source="/Images/shapes/diamond.png" Stretch="Uniform" Tapped="Diamond_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="200" Width="200" />
+            <MediaElement x:Name="Diamond" AutoPlay="False" Source="/Sound/shapes/Diamond.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center">
+            <Image Source="/Images/shapes/heart.png" Stretch="Uniform" Tapped="Heart_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="200" Width="200" />
+            <MediaElement x:Name="Heart" AutoPlay="False" Source="/Sound/shapes/heart.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center">
+            <Image Source="/Images/shapes/oval.png" Stretch="Uniform" Tapped="Oval_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="200" Width="200" />
+            <MediaElement x:Name="Oval" AutoPlay="False" Source="/Sound/shapes/Oval.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center">
+            <Image Source="/Images/shapes/rectangle.png" Stretch="Uniform" Tapped="Rectangle_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="200" Width="200" />
+            <MediaElement x:Name="Rectangle" AutoPlay="False" Source="/Sound/shapes/Rectangle.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center">
+            <Image Source="/Images/shapes/square.png" Stretch="Uniform" Tapped="Square_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="200" Width="200"/>
+            <MediaElement x:Name="Square" AutoPlay="False" Source="/Sound/shapes/Square.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center">
+            <Image Source="/Images/shapes/star.png" Stretch="Uniform" Tapped="Star_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="200" Width="200" />
+            <MediaElement x:Name="Star" AutoPlay="False" Source="/Sound/shapes/Star.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center">
+            <Image Source="/Images/shapes/triangle.png" Stretch="Uniform" Tapped="Triangle_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="200" Width="200" />
+            <MediaElement x:Name="Triangle" AutoPlay="False" Source="/Sound/shapes/Triangle.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+        
+    </Grid>
+</Page>

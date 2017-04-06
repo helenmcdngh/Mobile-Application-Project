@@ -1,0 +1,8 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-100"
+"ResourceDimensions"		"scale-100"
+
+[Files]
+"C:\Users\Helen\Desktop\YEAR 3\Mobile Apps\Project\other\Project\Project\obj\x64\Debug\split.scale-100.pri"			"resources.pri"
+"C:\Users\Helen\Desktop\YEAR 3\Mobile Apps\Project\other\Project\Project\obj\x64\Debug\PackageLayout\Images\StoreLogo.scale-100.png"			"Images\StoreLogo.scale-100.png"
+"C:\Users\Helen\Desktop\YEAR 3\Mobile Apps\Project\other\Project\Project\obj\x64\Debug\PackageLayout\Assets\StoreLogo.scale-100.png"			"Assets\StoreLogo.scale-100.png"

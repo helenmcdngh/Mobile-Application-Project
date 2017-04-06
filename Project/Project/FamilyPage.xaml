@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="Project.FamilyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="250*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="250*"/>
+        </Grid.ColumnDefinitions>
+
+        <GridView Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center">
+            <Image Source="/Images/family/granddad.png" Stretch="Uniform" Tapped="Granddad_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Granddad" AutoPlay="False" Source="/Sound/family/Granddad.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center">
+            <Image Source="/Images/family/grandmom.png" Stretch="Uniform" Tapped="Grandmom_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Granny" AutoPlay="False" Source="/Sound/family/Granny.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center">
+            <Image Source="/Images/family/dad.png" Stretch="Uniform" Tapped="Dad_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Dad" AutoPlay="False" Source="/Sound/family/Dad.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center">
+            <Image Source="/Images/family/Mom.png" Stretch="Uniform" Tapped="Mom_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Mom" AutoPlay="False" Source="/Sound/family/Mom.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center">
+            <Image Source="/Images/family/brother.png" Stretch="Uniform" Tapped="Brother_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Brother" AutoPlay="False" Source="/Sound/family/Brother.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center">
+            <Image Source="/Images/family/sister.png" Stretch="Uniform" Tapped="Sister_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Sister" AutoPlay="False" Source="/Sound/family/Sister.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+    </Grid>
+</Page>

@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Project.AddPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Transparent">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="150" />
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160" />
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--Name of saving document-->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
+            <TextBox x:ConnectionId='3' PlaceholderText="Enter fileName here" x:Name="DocumentName" Width="310" Margin="0,0,0,59" />
+            <Button x:ConnectionId='4' x:Name="Save"                    Content="Save" Height="81" Margin="0,10,0,59" />
+            <Button x:ConnectionId='5' x:Name="SelectTextFile"
+                    Margin="20,10,0,59"
+                                                  
+                    Content="Open" Height="81" Width="59" />
+        </StackPanel>
+        <!--text filling document-->
+        <TextBox x:ConnectionId='1' PlaceholderText="Enter Content of fileName here,it will save this to a folder called Toddler Tap in Pictures library" x:Name="Content" Grid.Row="2" Grid.Column="2"/>
+
+        <ScrollViewer Grid.Row="3" Grid.Column="2">
+            <TextBlock x:ConnectionId='2' x:Name="FileText" />
+        </ScrollViewer>
+    </Grid>
+</Page>
+

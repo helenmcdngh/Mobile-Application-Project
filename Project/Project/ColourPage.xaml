@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="Project.ColourPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="250*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="250*"/>
+        </Grid.ColumnDefinitions>
+
+        <GridView Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center">
+            <Image Source="/Images/colours/black.png" Stretch="Uniform" Tapped="Black_pressed" VerticalAlignment="Center" HorizontalAlignment="Center"  Height="250" Width="200" />
+            <MediaElement x:Name="Black" AutoPlay="False" Source="/Sound/colours/Black.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center">
+            <Image Source="/Images/colours/blue.png" Stretch="Uniform" Tapped="Blue_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Blue" AutoPlay="False" Source="/Sound/colours/Blue.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+        
+        <GridView Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center">
+            <Image Source="/Images/colours/brow.png" Stretch="Uniform" Tapped="Brown_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Brown" AutoPlay="False" Source="/Sound/colours/Brown.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center">
+            <Image Source="/Images/colours/yellow.png" Stretch="Uniform" Tapped="Yellow_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Yellow" AutoPlay="False" Source="/Sound/colours/Yellow.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center">
+            <Image Source="/Images/colours/green.png" Stretch="Uniform" Tapped="Green_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Green" AutoPlay="False" Source="/Sound/colours/Green.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center">
+            <Image Source="/Images/colours/orange.png" Stretch="Uniform" Tapped="Orange_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Orange" AutoPlay="False" Source="/Sound/colours/Orange.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center">
+            <Image Source="/Images/colours/pink.png" Stretch="Uniform" Tapped="Pink_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Pink" AutoPlay="False" Source="/Sound/colours/Pink.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center">
+            <Image Source="/Images/colours/purple.png" Stretch="Uniform" Tapped="Purple_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Purple" AutoPlay="False" Source="/Sound/colours/Purple.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+
+        <GridView Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center">
+            <Image Source="/Images/colours/red.png" Stretch="Uniform" Tapped="Red_pressed" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="200" />
+            <MediaElement x:Name="Red" AutoPlay="False" Source="/Sound/colours/Red.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+        </GridView>
+    </Grid>
+</Page>

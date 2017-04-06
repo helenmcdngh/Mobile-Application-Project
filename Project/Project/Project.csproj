@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{19D29A73-F5AB-4D4A-B35C-2073221D3F72}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Project_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <AppxPackageDir>C:\Users\Helen\Desktop\YEAR 3\Mobile Apps\Project\other\Project\</AppxPackageDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPage.xaml.cs">
+      <DependentUpon>AddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalPage.xaml.cs">
+      <DependentUpon>AnimalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColourPage.xaml.cs">
+      <DependentUpon>ColourPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyPage.xaml.cs">
+      <DependentUpon>FamilyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShapePage.xaml.cs">
+      <DependentUpon>ShapePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Project_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\StoreLogo1.scale-100.png" />
+    <Content Include="Assets\StoreLogo1.scale-200.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Images\animals\animals.png" />
+    <Content Include="Images\animals\cat.png" />
+    <Content Include="Images\animals\chicken.png" />
+    <Content Include="Images\animals\cow.png" />
+    <Content Include="Images\animals\dog.png" />
+    <Content Include="Images\animals\duck.png" />
+    <Content Include="Images\animals\goat.png" />
+    <Content Include="Images\animals\horse.png" />
+    <Content Include="Images\animals\pig.png" />
+    <Content Include="Images\animals\sheep.png" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\blank.png" />
+    <Content Include="Images\colours\black.PNG" />
+    <Content Include="Images\colours\blue.PNG" />
+    <Content Include="Images\colours\brow.PNG" />
+    <Content Include="Images\colours\colours.png" />
+    <Content Include="Images\colours\green.PNG" />
+    <Content Include="Images\colours\orange.PNG" />
+    <Content Include="Images\colours\pink.PNG" />
+    <Content Include="Images\colours\purple.PNG" />
+    <Content Include="Images\colours\red.PNG" />
+    <Content Include="Images\colours\yellow.PNG" />
+    <Content Include="Images\family\brother.PNG" />
+    <Content Include="Images\family\dad.PNG" />
+    <Content Include="Images\family\family.png" />
+    <Content Include="Images\family\granddad.PNG" />
+    <Content Include="Images\family\grandmom.PNG" />
+    <Content Include="Images\family\mom.PNG" />
+    <Content Include="Images\family\name.png" />
+    <Content Include="Images\family\sister.PNG" />
+    <Content Include="Images\shapes\circle.PNG" />
+    <Content Include="Images\shapes\diamond.PNG" />
+    <Content Include="Images\shapes\heart.PNG" />
+    <Content Include="Images\shapes\oval.PNG" />
+    <Content Include="Images\shapes\rectangle.PNG" />
+    <Content Include="Images\shapes\shapes.png" />
+    <Content Include="Images\shapes\square.PNG" />
+    <Content Include="Images\shapes\star.PNG" />
+    <Content Include="Images\shapes\triangle.PNG" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Sound\animals\Cat.wav" />
+    <Content Include="Sound\animals\Chicken.wav" />
+    <Content Include="Sound\animals\Cow.wav" />
+    <Content Include="Sound\animals\Dog.wav" />
+    <Content Include="Sound\animals\Duck.wav" />
+    <Content Include="Sound\animals\Goat.wav" />
+    <Content Include="Sound\animals\Horse.wav" />
+    <Content Include="Sound\animals\Pig.wav" />
+    <Content Include="Sound\animals\Sheep.wav" />
+    <Content Include="Sound\colours\Black.wav" />
+    <Content Include="Sound\colours\Blue.wav" />
+    <Content Include="Sound\colours\Brown.wav" />
+    <Content Include="Sound\colours\Green.wav" />
+    <Content Include="Sound\colours\Orange.wav" />
+    <Content Include="Sound\colours\Pink.wav" />
+    <Content Include="Sound\colours\Purple.wav" />
+    <Content Include="Sound\colours\Red.wav" />
+    <Content Include="Sound\colours\Yellow.wav" />
+    <Content Include="Sound\family\Brother.wav" />
+    <Content Include="Sound\family\Dad.wav" />
+    <Content Include="Sound\family\Granddad.wav" />
+    <Content Include="Sound\family\Granny.wav" />
+    <Content Include="Sound\family\Mom.wav" />
+    <Content Include="Sound\family\Sister.wav" />
+    <Content Include="Sound\shapes\Circle.wav" />
+    <Content Include="Sound\shapes\Diamond.wav" />
+    <Content Include="Sound\shapes\Heart.wav" />
+    <Content Include="Sound\shapes\Oval.wav" />
+    <Content Include="Sound\shapes\Rectangle.wav" />
+    <Content Include="Sound\shapes\Square.wav" />
+    <Content Include="Sound\shapes\Star.wav" />
+    <Content Include="Sound\shapes\Triangle.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AddPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AnimalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ColourPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FamilyPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ShapePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,89 @@
+﻿<Page
+    x:Class="Project.AnimalPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="250*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="250*"/>
+        </Grid.ColumnDefinitions>
+
+        <GridView Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/Images/animals/cat.png" HorizontalAlignment="Center" Tapped="Cat_pressed"  Stretch="Uniform" Height="225" Width="200" />
+                <MediaElement Name="Cat" AutoPlay="False" Source="/Sound/animals/Cat.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+            </StackPanel>
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/Images/animals/dog.png" HorizontalAlignment="Center" Tapped="Dog_pressed" Stretch="Uniform" Height="225" Width="200" />
+                <MediaElement Name="Dog" AutoPlay="False" Source="/Sound/animals/Dog.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+            </StackPanel>
+        </GridView>
+
+        <GridView Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/Images/animals/cow.png"  HorizontalAlignment="Center" Tapped="Cow_pressed"  Stretch="Uniform" Height="225" Width="200" />
+                <MediaElement Name="Cow" AutoPlay="False" Source="/Sound/animals/Cow.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+            </StackPanel>
+        </GridView>
+
+        <GridView Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/Images/animals/horse.png" HorizontalAlignment="Center" Tapped="Horse_pressed" Stretch="Uniform" Height="225" Width="200" />
+                <MediaElement Name="Horse" AutoPlay="False" Source="/Sound/animals/Horse.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+            </StackPanel>
+        </GridView>
+
+        <GridView Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/Images/animals/sheep.png" HorizontalAlignment="Center" Tapped="Sheep_pressed" Stretch="Uniform" Height="225" Width="200" />
+                <MediaElement Name="Sheep" AutoPlay="False" Source="/Sound/animals/Sheep.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+            </StackPanel>
+        </GridView>
+
+        <GridView Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/Images/animals/chicken.png" HorizontalAlignment="Center" Tapped="Chicken_pressed" Stretch="Uniform" Height="225" Width="200" />
+                <MediaElement Name="Chicken" AutoPlay="False" Source="/Sound/animals/Chicken.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+            </StackPanel>
+        </GridView>
+
+        
+        <GridView Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/Images/animals/duck.png" HorizontalAlignment="Center" Tapped="Duck_pressed" Stretch="Uniform" Height="225" Width="200" />
+                <MediaElement Name="Duck" AutoPlay="False" Source="/Sound/animals/Duck.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+            </StackPanel>
+        </GridView>
+
+        
+        <GridView Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/Images/animals/pig.png" HorizontalAlignment="Center" Tapped="Pig_pressed" Stretch="Uniform" Height="225" Width="200"/>
+                <MediaElement Name="Pig" AutoPlay="False" Source="/Sound/animals/Pig.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+            </StackPanel>
+        </GridView>
+
+       
+        <GridView Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/Images/animals/goat.png"  HorizontalAlignment="Center" Tapped="Goat_pressed" Stretch="Uniform" Height="225" Width="200" />
+                <MediaElement Name="Goat" AutoPlay="False" Source="/Sound/animals/Goat.wav" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Volume="1" />
+            </StackPanel>
+        </GridView>
+
+    </Grid>
+</Page>
