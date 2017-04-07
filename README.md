@@ -18,11 +18,11 @@ Project Ideas
     - Shapes
     - Family members
     - Colours
-    - Foods
     - Animals
     
 Main
 ------------------------------------------------------------------------------------------------------------------------------------------
 I decide to make the Toddler Vocab Development Application.
-The Homepage looks like this.
-![main_page](https://cloud.githubusercontent.com/assets/15608152/24354258/0112641c-12e9-11e7-9173-fae482ec76fc.png)
+![capture](https://cloud.githubusercontent.com/assets/15608152/24821184/09f64ed6-1be5-11e7-9185-42652ddf422a.PNG)
+
+
